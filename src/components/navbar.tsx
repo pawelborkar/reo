@@ -1,7 +1,4 @@
-import { Button } from "@nextui-org/button";
-import { Kbd } from "@nextui-org/kbd";
 import { Link } from "@nextui-org/link";
-import { Input } from "@nextui-org/input";
 import {
   Navbar as NextUINavbar,
   NavbarBrand,
@@ -12,17 +9,11 @@ import {
   NavbarMenuItem,
 } from "@nextui-org/navbar";
 import { link as linkStyles } from "@nextui-org/theme";
+import { Github, Twitter } from "lucide-react";
 import clsx from "clsx";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import {
-  TwitterIcon,
-  GithubIcon,
-  DiscordIcon,
-  HeartFilledIcon,
-} from "@/components/icons";
-import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
   return (
@@ -34,7 +25,7 @@ export const Navbar = () => {
             color="foreground"
             href="/"
           >
-            <Logo />
+            {/* <Logo /> */}
             <p className="font-bold text-inherit">ACME</p>
           </Link>
         </NavbarBrand>
@@ -62,13 +53,10 @@ export const Navbar = () => {
       >
         <NavbarItem className="hidden sm:flex gap-2">
           <Link isExternal href={siteConfig.links.twitter} title="Twitter">
-            <TwitterIcon className="text-default-500" />
+            <Twitter className="text-default-500" />
           </Link>
-          <Link isExternal href={siteConfig.links.discord} title="Discord">
-            <DiscordIcon className="text-default-500" />
-          </Link>
-          <Link isExternal href={siteConfig.links.github} title="GitHub">
-            <GithubIcon className="text-default-500" />
+          <Link isExternal href={siteConfig.links.github} title="Github">
+            <Github className="text-default-500" />
           </Link>
           <ThemeSwitch />
         </NavbarItem>
@@ -88,7 +76,7 @@ export const Navbar = () => {
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
         <Link isExternal href={siteConfig.links.github}>
-          <GithubIcon className="text-default-500" />
+          <Github className="text-default-500" />
         </Link>
         <ThemeSwitch />
         <NavbarMenuToggle />

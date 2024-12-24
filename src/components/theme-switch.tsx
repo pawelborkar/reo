@@ -4,7 +4,7 @@ import { SwitchProps, useSwitch } from "@nextui-org/switch";
 import clsx from "clsx";
 
 import { useTheme } from "@/hooks/use-theme";
-import { SunFilledIcon, MoonFilledIcon } from "@/components/icons";
+import { Moon, Sun } from "lucide-react";
 
 export interface ThemeSwitchProps {
   className?: string;
@@ -47,7 +47,7 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
         className: clsx(
           "px-px transition-opacity hover:opacity-80 cursor-pointer",
           className,
-          classNames?.base,
+          classNames?.base
         ),
       })}
     >
@@ -69,15 +69,11 @@ export const ThemeSwitch: FC<ThemeSwitchProps> = ({
               "px-0",
               "mx-0",
             ],
-            classNames?.wrapper,
+            classNames?.wrapper
           ),
         })}
       >
-        {isSelected ? (
-          <MoonFilledIcon size={22} />
-        ) : (
-          <SunFilledIcon size={22} />
-        )}
+        {isSelected ? <Moon size={22} /> : <Sun size={22} />}
       </div>
     </Component>
   );
