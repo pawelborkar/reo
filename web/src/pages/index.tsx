@@ -1,38 +1,70 @@
+import { useCallback, useState } from "react";
+import axios from "axios";
+import { useDropzone } from "react-dropzone";
 import { title, subtitle } from "@/components/primitives";
 import { Button } from "@nextui-org/button";
 import DefaultLayout from "@/layouts/default";
 import { UploadIcon } from "lucide-react";
 
-import { createPresignedPost } from "@aws-sdk/s3-presigned-post";
-import { S3Client } from "@aws-sdk/client-s3";
-
 export default function IndexPage() {
-  const Conditions = [
-    { acl: "bucket-owner-full-control" },
-    { bucket: "reo.im" },
-    ["starts-with", "$key", "uploads"],
-  ];
+  const [file, setFile] = useState(null);
+  const [uploading, setUploading] = useState(false);
+  const [uploadURL, setUploadURL] = useState<string>("");
+  const [uploadProgress, setUploadProgress] = useState(0);
+  // const URL = `${import.meta.env.BASE_URL}/api/${import.meta.env.API_VERSION}/content`;
+  const URL = `http://localhost:8000/api/v1/content`;
+  const onDrop = useCallback(async (acceptedFiles: any) => {
+    setFile(acceptedFiles[0]);
+    const { data } = await axios.post(URL, {
+      filename: acceptedFiles[0]?.name,
+      type: acceptedFiles[0].name.split(".")[1],
+    });
 
+    console.log("data", data?.data.uploadUrl);
+    setUploadURL(data?.data.uploadUrl);
+  }, []);
+
+  const { getRootProps, getInputProps } = useDropzone({ onDrop });
+
+  const uploadFile = async (e: any) => {
+    e.preventDefault();
+    console.log("uploading...", uploadURL);
+    try {
+      const options = {
+        headers: {
+          //@ts-ignore next-line
+          "Content-Type": file?.type,
+        },
+      };
+      const response = await axios.put(uploadURL, file, options);
+
+      console.log("S3: ", response);
+    } catch (error) {
+      console.error("Upload error:", error);
+      throw error;
+    } finally {
+      setUploading(false);
+      setUploadProgress(0);
+    }
+  };
   return (
     <DefaultLayout>
       <section className="flex flex-col items-center justify-center gap-4 py-8 md:py-10">
-        <div className="inline-block max-w-lg text-center justify-center">
-          <span className={title()}>Share&nbsp;</span>
+        <div className="inline-block max-w-lg text-center justify-center my-4">
+          <span className={title()}>Quickly share&nbsp;</span>
           <span className={title({ color: "violet" })}>
-            Files, Videos, Texts and Gifs&nbsp;
+            Files, Images and Videos &nbsp;
           </span>
-          <span className={title()}>from anywhere in the world</span>
-          <div className={subtitle({ class: "mt-4" })}>
-            Encrypted, fast and disposable.
-          </div>
+          <span className={title()}>in a disposable manner</span>
         </div>
-
-        <form className="flex flex-col items-center justify-center w-[40vw] m-6">
-          <input type="hidden" name="key" value="VALUE" />
-          <input type="hidden" name="AWSAccessKeyId" value="VALUE" />
-          <input type="hidden" name="policy" value="VALUE" />
-          <input type="hidden" name="signature" value="VALUE" />
-          <label className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500 dark:hover:bg-gray-600">
+        <form
+          {...getRootProps({
+            className:
+              "flex flex-col items-center justify-center w-[80vw] md:w-[60vw] lg:w-[40vw] m-6",
+          })}
+          onSubmit={uploadFile}
+        >
+          <label className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50 dark:hover:bg-gray-800 dark:bg-gray-700 hover:bg-gray-100 dark:border-gray-600 dark:hover:border-gray-500">
             <div className="flex flex-col items-center justify-center pt-5 pb-6">
               <UploadIcon size={80} />
               <p className="m-2 text-sm text-gray-500 dark:text-gray-400">
@@ -47,21 +79,21 @@ export default function IndexPage() {
               id="dropzone-file"
               type="file"
               name="dropzone-file"
-              className="hidden"
+              {...getInputProps({ className: "hidden" })}
             />
           </label>
+
           <Button
             type="submit"
             className="w-40 mt-8 bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-xl"
             radius="full"
             variant="shadow"
+            isLoading={uploading}
+            disabled={uploading}
           >
             Get Sharable Link
           </Button>
-
-          {/* <input type="submit" name="submit" value="Upload to Amazon S3" /> */}
         </form>
-
         {/* <div className="flex gap-3"> */}
         {/*   <Button */}
         {/*     // isLoading */}
@@ -74,7 +106,10 @@ export default function IndexPage() {
         {/*   </Button> */}
         {/* </div> */}
         <div className="text-gray-400">
-          We do not store any of your data once it gets expired.
+          We do not store any of your uploaded data once it gets expired.
+        </div>
+        <div className="text-gray-400">
+          Yup. We're proudly open source because we value transparency
         </div>
       </section>
     </DefaultLayout>
