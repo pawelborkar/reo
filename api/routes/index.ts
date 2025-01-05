@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { generatePresignedPostUrl } from "../controllers";
+import { getUploadUrl } from "../controllers";
 
 const router = Router();
 
-router.route("/").post(generatePresignedPostUrl);
+router.route("/").post(getUploadUrl);
 
 export default router;
