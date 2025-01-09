@@ -1,1 +1,1 @@
-{"root":["../app.ts","../controllers/index.ts","../routes/index.ts","../utils/index.ts"],"version":"5.7.2"}
+{"root":["../app.ts","../configs/aws/index.ts","../controllers/index.ts","../libs/index.ts","../routes/index.ts","../utils/index.ts"],"version":"5.7.2"}
