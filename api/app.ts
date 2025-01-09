@@ -1,4 +1,4 @@
-import express, { Application, Response } from "express";
+import express, { Application } from "express";
 import dotenv from "dotenv";
 import helmet from "helmet";
 import cors from "cors";
