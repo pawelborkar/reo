@@ -1,7 +1,7 @@
 import { useCallback, useState } from "react";
 import axios from "axios";
 import { useDropzone } from "react-dropzone";
-import { title, subtitle } from "@/components/primitives";
+import { title } from "@/components/primitives";
 import { Button } from "@nextui-org/button";
 import DefaultLayout from "@/layouts/default";
 import { UploadIcon } from "lucide-react";
@@ -10,7 +10,7 @@ export default function IndexPage() {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [uploadURL, setUploadURL] = useState<string>("");
-  const [uploadProgress, setUploadProgress] = useState(0);
+  const [, setUploadProgress] = useState(0);
   // const URL = `${import.meta.env.BASE_URL}/api/${import.meta.env.API_VERSION}/content`;
   const URL = `http://localhost:8000/api/v1/content`;
   const onDrop = useCallback(async (acceptedFiles: any) => {
