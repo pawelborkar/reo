@@ -10,8 +10,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "node dist/index.js",
-    "dev": "ts-node src/index.ts",
+    "start": "node dist/app.js",
+    "dev": "ts-node app.ts",
     "build": "tsc",
     "clean": "rm -rf dist",
     "build:prod": "npm run clean && tsc",
@@ -28,7 +28,8 @@
     "express": "^4.21.2",
     "helmet": "^8.0.0",
     "hpp": "^0.2.3",
-    "nanoid": "^5.0.9"
+    "nanoid": "^5.0.9",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -43,7 +44,6 @@
     "eslint-plugin-security": "^3.0.1",
     "prettier": "^3.4.2",
     "prisma": "^6.1.0",
-    "ts-node": "^2.0.0",
     "typescript": "^5.7.2"
   }
 }
