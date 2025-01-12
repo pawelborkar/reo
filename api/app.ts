@@ -3,7 +3,8 @@ import dotenv from "dotenv";
 import helmet from "helmet";
 import cors from "cors";
 import hpp from "hpp";
-import router from "./routes";
+import downloadRouter from "./routes/download.routes";
+import uploadRouter from "./routes/upload.routes";
 
 dotenv.config();
 
@@ -19,7 +20,8 @@ app.use(helmet());
 app.get(`/api/${process.env.API_VERSION}/health`, (_, res) => {
   res.send("This site is healthy");
 });
-app.use(`/api/${process.env.API_VERSION}/content`, router);
+app.use(`/api/${process.env.API_VERSION}/content`, uploadRouter);
+app.use(`/api/${process.env.API_VERSION}/download`, downloadRouter);
 
 app.listen(PORT, () => {
   console.log("App running on PORT: ", PORT);
