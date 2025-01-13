@@ -2,7 +2,7 @@
   "name": "reo-api",
   "version": "0.0.1",
   "description": "Reo API",
-  "main": "index.js",
+  "main": "app.js",
   "author": "Pawel Borkar <pawel@duck.com>",
   "repository": {
     "type": "git",
@@ -10,9 +10,12 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "tsc -b",
-    "start": "tsc -b && node dist/app.js",
-    "dev": "tsc --watch app.ts",
+    "start": "node dist/app.js",
+    "dev": "ts-node app.ts --watch",
+    "build": "rm -rf dist && tsc",
+    "clean": "rm -rf dist",
+    "build:prod": "npm run clean && tsc",
+    "watch": "tsc -w",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
@@ -21,10 +24,14 @@
     "@aws-sdk/s3-request-presigner": "^3.717.0",
     "@prisma/client": "^6.1.0",
     "cors": "^2.8.5",
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "helmet": "^8.0.0",
     "hpp": "^0.2.3",
-    "nanoid": "^5.0.9"
+    "human-id": "^4.1.1",
+    "nanoid": "^5.0.9",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
@@ -39,7 +46,6 @@
     "eslint-plugin-security": "^3.0.1",
     "prettier": "^3.4.2",
     "prisma": "^6.1.0",
-    "ts-node-dev": "^2.0.0",
     "typescript": "^5.7.2"
   }
 }

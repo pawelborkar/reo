@@ -19,8 +19,11 @@ model file {
 model UrlShortener {
   id             Int      @id @default(autoincrement())
   destinationUrl String
-  code           String
+  code           String   @unique
+  count          Int      @default(0)
   isActive       Boolean
   createdAt      DateTime @default(now())
   expiresAt      DateTime
+
+  @@index([code])
 }

@@ -1,26 +1,27 @@
 import { useCallback, useState } from "react";
 import axios from "axios";
 import { useDropzone } from "react-dropzone";
-import { title, subtitle } from "@/components/primitives";
+import { title } from "@/components/primitives";
 import { Button } from "@nextui-org/button";
 import DefaultLayout from "@/layouts/default";
 import { UploadIcon } from "lucide-react";
+
+const URL = `${import.meta.env.VITE_API_URL}/api/${import.meta.env.VITE_API_VERSION}/content`;
 
 export default function IndexPage() {
   const [file, setFile] = useState(null);
   const [uploading, setUploading] = useState(false);
   const [uploadURL, setUploadURL] = useState<string>("");
-  const [uploadProgress, setUploadProgress] = useState(0);
-  // const URL = `${import.meta.env.BASE_URL}/api/${import.meta.env.API_VERSION}/content`;
-  const URL = `http://localhost:8000/api/v1/content`;
+  const [, setUploadProgress] = useState(0);
+
   const onDrop = useCallback(async (acceptedFiles: any) => {
     setFile(acceptedFiles[0]);
+    const filename: Array<string> = acceptedFiles[0]?.name?.split("."); //[""]
     const { data } = await axios.post(URL, {
-      filename: acceptedFiles[0]?.name,
-      type: acceptedFiles[0].name.split(".")[1],
+      filename: filename[0],
+      type: filename[1],
     });
 
-    console.log("data", data?.data.uploadUrl);
     setUploadURL(data?.data.uploadUrl);
   }, []);
 
