@@ -7,14 +7,14 @@ import { s3Client } from "../configs/aws";
 dotenv.config();
 
 const createSignedUrl = async (filename: string, mimeType: string) => {
-  const file = `reo-${filename}-${nanoid(6)}.${mimeType}`;
+  const file = `${filename}-${nanoid(6)}.${mimeType}`;
   const command = new PutObjectCommand({
     Bucket: `${process.env.AWS_BUCKET_NAME}`,
-    Key: `${process.env.S3_DIR_PATH}/${file}`,
+    Key: `${process.env.AWS_S3_DIR_PATH}/${file}`,
     ContentType: mimeType,
   });
   const signedUrl = await getSignedUrl(s3Client, command, {
-    expiresIn: Number(`${process.env.SIGNEDURL_EXPIRE_DURATION}`),
+    expiresIn: Number(`${process.env.AWS_SIGNEDURL_EXPIRE_DURATION}`),
   });
   return signedUrl;
 };
