@@ -1,6 +1,6 @@
 services:
   proxy:
-    image: traefik:v2.12.1
+    image: traefik:v2.11.18
     command: --providers.docker
     ports:
       - 80:80
