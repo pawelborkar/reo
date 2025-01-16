@@ -1,5 +1,6 @@
 dist
 node_modules
+secrets
 *.env
 *.js
 !jest.config.js
