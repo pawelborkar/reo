@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import axios from "axios";
 import { useDropzone } from "react-dropzone";
 import { title } from "@/components/primitives";
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/button";
 import DefaultLayout from "@/layouts/default";
 import { UploadIcon } from "lucide-react";
 

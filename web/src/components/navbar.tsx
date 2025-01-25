@@ -1,12 +1,12 @@
-import { Link } from "@nextui-org/link";
+import { Link } from "@heroui/link";
 import {
   Navbar as NextUINavbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   NavbarMenuToggle,
-} from "@nextui-org/navbar";
-import { link as linkStyles } from "@nextui-org/theme";
+} from "@heroui/navbar";
+import { link as linkStyles } from "@heroui/theme";
 import { Github, Twitter } from "lucide-react";
 import clsx from "clsx";
 
