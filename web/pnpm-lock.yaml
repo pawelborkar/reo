@@ -17,9 +17,6 @@ importers:
       '@nextui-org/button':
         specifier: 2.2.3
         version: 2.2.3(@nextui-org/system@2.4.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@nextui-org/card':
-        specifier: ^2.2.9
-        version: 2.2.9(@nextui-org/system@2.4.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@nextui-org/code':
         specifier: 2.2.3
         version: 2.2.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -107,7 +104,7 @@ importers:
         version: 8.11.0(eslint@8.57.1)(typescript@5.6.3)
       '@vitejs/plugin-react':
         specifier: ^4.3.4
-        version: 4.3.4(vite@5.4.11(@types/node@20.5.7))
+        version: 4.3.4(vite@5.4.12(@types/node@20.5.7))
       autoprefixer:
         specifier: 10.4.19
         version: 10.4.19(postcss@8.4.38)
@@ -148,11 +145,11 @@ importers:
         specifier: 5.6.3
         version: 5.6.3
       vite:
-        specifier: ^5.4.11
-        version: 5.4.11(@types/node@20.5.7)
+        specifier: ^5.4.12
+        version: 5.4.12(@types/node@20.5.7)
       vite-tsconfig-paths:
         specifier: ^4.3.2
-        version: 4.3.2(typescript@5.6.3)(vite@5.4.11(@types/node@20.5.7))
+        version: 4.3.2(typescript@5.6.3)(vite@5.4.12(@types/node@20.5.7))
 
 packages:
 
@@ -647,15 +644,7 @@ packages:
 
   '@nextui-org/button@2.2.3':
     resolution: {integrity: sha512-t5X+dMYcU8CPys97N0Y9lEDGJTNOqA/aPK27zahel43fVIrQ/o4agu0HhLDmBkg1svmlYR/7AOsIoAchPkKGsQ==}
-    peerDependencies:
-      '@nextui-org/system': '>=2.4.0'
-      '@nextui-org/theme': '>=2.4.0'
-      framer-motion: '>=11.5.6 || >=12.0.0-alpha.1'
-      react: '>=18 || >=19.0.0-rc.0'
-      react-dom: '>=18 || >=19.0.0-rc.0'
-
-  '@nextui-org/card@2.2.9':
-    resolution: {integrity: sha512-Ltvb5Uy4wwkBJj3QvVQmoB6PwLYUNSoWAFo2xxu7LUHKWcETYI0YbUIuwL2nFU2xfJYeBTGjXGQO1ffBsowrtQ==}
+    deprecated: This package has been deprecated. Please use @heroui/button instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -665,6 +654,7 @@ packages:
 
   '@nextui-org/code@2.2.3':
     resolution: {integrity: sha512-hhQVx/XEWspnlSQHmCQZECc2xO2cjHotSv0Obc4T4np9qITxgJA+SomhKyIuQcLIoYzI3qPtz9sMsbhd1YPyBg==}
+    deprecated: This package has been deprecated. Please use @heroui/code instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.4.0'
       react: '>=18 || >=19.0.0-rc.0'
@@ -672,6 +662,7 @@ packages:
 
   '@nextui-org/divider@2.2.3':
     resolution: {integrity: sha512-AjWB9YfUgCIKxZNQS2dhkn9cKFymS5uqgYfBrwNEJOFaGF5viOkwsaioOE013Pw7ROD79CCoCQ7NcOdaLb0KsQ==}
+    deprecated: This package has been deprecated. Please use @heroui/divider instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.4.0'
       react: '>=18 || >=19.0.0-rc.0'
@@ -684,6 +675,7 @@ packages:
 
   '@nextui-org/dropdown@2.3.3':
     resolution: {integrity: sha512-7wBVgALrY1KDforViuZQociaKw5ix6ai42P9xpNvURtTII72quEhmeljegiCvwUicZ4CQj8Ku6qUV/C6VS0f5Q==}
+    deprecated: This package has been deprecated. Please use @heroui/dropdown instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -693,6 +685,7 @@ packages:
 
   '@nextui-org/form@2.1.3':
     resolution: {integrity: sha512-qSGSnJaymnIoxZWe2QuIYbAnfPzjL21GJYdEXuS2L5NVGrTSdJSqaJmT0qw0236htAk3hQNs6J+F+tW1XuN/nw==}
+    deprecated: This package has been deprecated. Please use @heroui/form instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -708,6 +701,7 @@ packages:
 
   '@nextui-org/input@2.4.3':
     resolution: {integrity: sha512-wlJ26rIDAL0jmUznQMWCkI1HrW1vZX/SVscqkDBRiV/ZECsNCjrYtDx745tcG09o/Xxf1zY5bDrJXxN5z8qojg==}
+    deprecated: This package has been deprecated. Please use @heroui/input instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -716,6 +710,7 @@ packages:
 
   '@nextui-org/kbd@2.2.3':
     resolution: {integrity: sha512-+Co9wWMx7+vNqgFzf0ozyWBnkylQgbK5NLsyZK1m9TRPdqLar8Y7FnXMaEnkY47sVD6R4Vx75h2LPFw4kXhyfw==}
+    deprecated: This package has been deprecated. Please use @heroui/kbd instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.4.0'
       react: '>=18 || >=19.0.0-rc.0'
@@ -723,6 +718,7 @@ packages:
 
   '@nextui-org/link@2.2.3':
     resolution: {integrity: sha512-hDfJCbhRIVjziFrbE7GLUxtmhZpqSA69c6MnSkt0XTP5C0OzYYl6WnSxP+pkvgPQ5zAmg+XkTUXdN5bc1ffcQw==}
+    deprecated: This package has been deprecated. Please use @heroui/link instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -731,6 +727,7 @@ packages:
 
   '@nextui-org/menu@2.2.3':
     resolution: {integrity: sha512-3SjJ2HNTivojhdbHBSJQlWob2h2BRpScpOYZgiDBRx81i5AuoqG/k3od51diocmvJc7+TWeG0/iI6BFIbPWswg==}
+    deprecated: This package has been deprecated. Please use @heroui/menu instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -739,6 +736,7 @@ packages:
 
   '@nextui-org/navbar@2.2.3':
     resolution: {integrity: sha512-MlbLECW7I1akH2FxPYvAJWWyNBSYY5dzoWJj2CYovLG2B/4bDzH49mVO8vvPXKTso2ZcivDAVqBBfa/4JYSx1A==}
+    deprecated: This package has been deprecated. Please use @heroui/navbar instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -748,6 +746,7 @@ packages:
 
   '@nextui-org/popover@2.3.3':
     resolution: {integrity: sha512-QqXyK+gxDQM+KW1sgBz8z5fZppK9aalmF23c8H+dH9QVqOwMIq2glGNVeHR7UKQPXCYJcvkqFJLIWuhzCQUFLQ==}
+    deprecated: This package has been deprecated. Please use @heroui/popover instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -765,22 +764,9 @@ packages:
     peerDependencies:
       react: '>=18 || >=19.0.0-rc.0'
 
-  '@nextui-org/react-utils@2.1.3':
-    resolution: {integrity: sha512-o61fOS+S8p3KtgLLN7ub5gR0y7l517l9eZXJabUdnVcZzZjTqEijWjzjIIIyAtYAlL4d+WTXEOROuc32sCmbqw==}
-    peerDependencies:
-      react: '>=18 || >=19.0.0-rc.0'
-
   '@nextui-org/ripple@2.2.3':
     resolution: {integrity: sha512-MlW1A5WZLNmpTWt8DAlwu+8fJ+vPbvQHtam60htZPqL19mrua4K71ZFCfsO10WddtyYk22qeJBDpY+Pb1poioA==}
-    peerDependencies:
-      '@nextui-org/system': '>=2.4.0'
-      '@nextui-org/theme': '>=2.4.0'
-      framer-motion: '>=11.5.6 || >=12.0.0-alpha.1'
-      react: '>=18 || >=19.0.0-rc.0'
-      react-dom: '>=18 || >=19.0.0-rc.0'
-
-  '@nextui-org/ripple@2.2.7':
-    resolution: {integrity: sha512-cphzlvCjdROh1JWQhO/wAsmBdlU9kv/UA2YRQS4viaWcA3zO+qOZVZ9/YZMan6LBlOLENCaE9CtV2qlzFtVpEg==}
+    deprecated: This package has been deprecated. Please use @heroui/ripple instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -796,11 +782,9 @@ packages:
   '@nextui-org/shared-utils@2.1.1':
     resolution: {integrity: sha512-qE8gZO63GqUX1ljOi/4PlwGzE84dhUS3zFIq+10/N6ePAaNjM4DwtL4ocucG3abCz4iRUueYKLIxTO2+eYyAfw==}
 
-  '@nextui-org/shared-utils@2.1.2':
-    resolution: {integrity: sha512-5n0D+AGB4P9lMD1TxwtdRSuSY0cWgyXKO9mMU11Xl3zoHNiAz/SbCSTc4VBJdQJ7Y3qgNXvZICzf08+bnjjqqA==}
-
   '@nextui-org/snippet@2.2.4':
     resolution: {integrity: sha512-6p0jLPAXxp4AN0l5+vipknJpDrrpqoVYeGstw9b1T3nO5bkq3MxBMLs/jzARtN2dLLE+Knm7Yfjrh50KI8eHJA==}
+    deprecated: This package has been deprecated. Please use @heroui/snippet instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -810,6 +794,7 @@ packages:
 
   '@nextui-org/spinner@2.2.3':
     resolution: {integrity: sha512-cwwUmfdVuHBhggk5LeLTwpgWpC4t+yiTspnNFmwTfjwO/PC/WsktJS8mgsFdiNpfOSivx0mrZwDa8KGu8blCxA==}
+    deprecated: This package has been deprecated. Please use @heroui/spinner instead.
     peerDependencies:
       '@nextui-org/theme': '>=2.4.0'
       react: '>=18 || >=19.0.0-rc.0'
@@ -817,6 +802,7 @@ packages:
 
   '@nextui-org/switch@2.2.3':
     resolution: {integrity: sha512-bsGIzxZxengs4yyAfZ9dL7Zaa/EqZaw5K0fmMhN31G2xSRKwOO2e4VOle6QkzObmCG/I7Mp+az9bXa+D6bYdTw==}
+    deprecated: This package has been deprecated. Please use @heroui/switch instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -843,6 +829,7 @@ packages:
 
   '@nextui-org/tooltip@2.2.3':
     resolution: {integrity: sha512-P+u9FI1bGAikOTFMPGeGxboiRyxffg/hdCfGVlUzRMAV6zFr49inMcRjGTn8hKn3nDkY87xH/l/cT149DaJYoQ==}
+    deprecated: This package has been deprecated. Please use @heroui/tooltip instead.
     peerDependencies:
       '@nextui-org/system': '>=2.4.0'
       '@nextui-org/theme': '>=2.4.0'
@@ -852,11 +839,6 @@ packages:
 
   '@nextui-org/use-aria-button@2.2.1':
     resolution: {integrity: sha512-p/5rKd+t74ncY3BDp253sVUkFc0ClE59Z7QSoKRtRfDsSKlBcT4EMj+mNdnlBfyPQtygkMhDRJ7F/7xi8kMg+Q==}
-    peerDependencies:
-      react: '>=18 || >=19.0.0-rc.0'
-
-  '@nextui-org/use-aria-button@2.2.4':
-    resolution: {integrity: sha512-Bz8l4JGzRKh6V58VX8Laq4rKZDppsnVuNCBHpMJuLo2F9ht7UKvZAEJwXcdbUZ87aui/ZC+IPYqgjvT+d8QlQg==}
     peerDependencies:
       react: '>=18 || >=19.0.0-rc.0'
 
@@ -925,11 +907,6 @@ packages:
     resolution: {integrity: sha512-1vkRsjdvJrJleK73u7ClrW4Fw3mtr2hIs8M2yLZUpLoqHXnIYJwmeEMtzwyPFYKBc5jaHcGXw45any7Puy1aFA==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0
-
-  '@react-aria/button@3.11.0':
-    resolution: {integrity: sha512-b37eIV6IW11KmNIAm65F3SEl2/mgj5BrHIysW6smZX3KoKWTGYsYfcQkmtNgY0GOSFfDxMCoolsZ6mxC00nSDA==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
   '@react-aria/dialog@3.5.19':
     resolution: {integrity: sha512-I3AJWpAWCajj8Ama8qLQ18Tc37ODyk+Ym3haYEl5L4QnuFc0dU1sMJr15fppDGIxYjwvTTfctyhaSCz+S+wpkw==}
@@ -1036,11 +1013,6 @@ packages:
 
   '@react-aria/toggle@3.10.10':
     resolution: {integrity: sha512-QwMT/vTNrbrILxWVHfd9zVQ3mV2NdBwyRu+DphVQiFAXcmc808LEaIX2n0lI6FCsUDC9ZejCyvzd91/YemdZ1Q==}
-    peerDependencies:
-      react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
-
-  '@react-aria/toolbar@3.0.0-beta.11':
-    resolution: {integrity: sha512-LM3jTRFNDgoEpoL568WaiuqiVM7eynSQLJis1hV0vlVnhTd7M7kzt7zoOjzxVb5Uapz02uCp1Fsm4wQMz09qwQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0 || ^19.0.0-rc.1
 
@@ -1228,98 +1200,98 @@ packages:
     resolution: {integrity: sha512-Quz1KOffeEf/zwkCBM3kBtH4ZoZ+pT3xIXBG4PPW/XFtDP7EGhtTiC2+gpL9GnR7+Qdet5Oa6cYSvwKYg6kN9Q==}
     engines: {node: '>=14.0.0'}
 
-  '@rollup/rollup-android-arm-eabi@4.29.1':
-    resolution: {integrity: sha512-ssKhA8RNltTZLpG6/QNkCSge+7mBQGUqJRisZ2MDQcEGaK93QESEgWK2iOpIDZ7k9zPVkG5AS3ksvD5ZWxmItw==}
+  '@rollup/rollup-android-arm-eabi@4.32.0':
+    resolution: {integrity: sha512-G2fUQQANtBPsNwiVFg4zKiPQyjVKZCUdQUol53R8E71J7AsheRMV/Yv/nB8giOcOVqP7//eB5xPqieBYZe9bGg==}
     cpu: [arm]
     os: [android]
 
-  '@rollup/rollup-android-arm64@4.29.1':
-    resolution: {integrity: sha512-CaRfrV0cd+NIIcVVN/jx+hVLN+VRqnuzLRmfmlzpOzB87ajixsN/+9L5xNmkaUUvEbI5BmIKS+XTwXsHEb65Ew==}
+  '@rollup/rollup-android-arm64@4.32.0':
+    resolution: {integrity: sha512-qhFwQ+ljoymC+j5lXRv8DlaJYY/+8vyvYmVx074zrLsu5ZGWYsJNLjPPVJJjhZQpyAKUGPydOq9hRLLNvh1s3A==}
     cpu: [arm64]
     os: [android]
 
-  '@rollup/rollup-darwin-arm64@4.29.1':
-    resolution: {integrity: sha512-2ORr7T31Y0Mnk6qNuwtyNmy14MunTAMx06VAPI6/Ju52W10zk1i7i5U3vlDRWjhOI5quBcrvhkCHyF76bI7kEw==}
+  '@rollup/rollup-darwin-arm64@4.32.0':
+    resolution: {integrity: sha512-44n/X3lAlWsEY6vF8CzgCx+LQaoqWGN7TzUfbJDiTIOjJm4+L2Yq+r5a8ytQRGyPqgJDs3Rgyo8eVL7n9iW6AQ==}
     cpu: [arm64]
     os: [darwin]
 
-  '@rollup/rollup-darwin-x64@4.29.1':
-    resolution: {integrity: sha512-j/Ej1oanzPjmN0tirRd5K2/nncAhS9W6ICzgxV+9Y5ZsP0hiGhHJXZ2JQ53iSSjj8m6cRY6oB1GMzNn2EUt6Ng==}
+  '@rollup/rollup-darwin-x64@4.32.0':
+    resolution: {integrity: sha512-F9ct0+ZX5Np6+ZDztxiGCIvlCaW87HBdHcozUfsHnj1WCUTBUubAoanhHUfnUHZABlElyRikI0mgcw/qdEm2VQ==}
     cpu: [x64]
     os: [darwin]
 
-  '@rollup/rollup-freebsd-arm64@4.29.1':
-    resolution: {integrity: sha512-91C//G6Dm/cv724tpt7nTyP+JdN12iqeXGFM1SqnljCmi5yTXriH7B1r8AD9dAZByHpKAumqP1Qy2vVNIdLZqw==}
+  '@rollup/rollup-freebsd-arm64@4.32.0':
+    resolution: {integrity: sha512-JpsGxLBB2EFXBsTLHfkZDsXSpSmKD3VxXCgBQtlPcuAqB8TlqtLcbeMhxXQkCDv1avgwNjF8uEIbq5p+Cee0PA==}
     cpu: [arm64]
     os: [freebsd]
 
-  '@rollup/rollup-freebsd-x64@4.29.1':
-    resolution: {integrity: sha512-hEioiEQ9Dec2nIRoeHUP6hr1PSkXzQaCUyqBDQ9I9ik4gCXQZjJMIVzoNLBRGet+hIUb3CISMh9KXuCcWVW/8w==}
+  '@rollup/rollup-freebsd-x64@4.32.0':
+    resolution: {integrity: sha512-wegiyBT6rawdpvnD9lmbOpx5Sph+yVZKHbhnSP9MqUEDX08G4UzMU+D87jrazGE7lRSyTRs6NEYHtzfkJ3FjjQ==}
     cpu: [x64]
     os: [freebsd]
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.29.1':
-    resolution: {integrity: sha512-Py5vFd5HWYN9zxBv3WMrLAXY3yYJ6Q/aVERoeUFwiDGiMOWsMs7FokXihSOaT/PMWUty/Pj60XDQndK3eAfE6A==}
+  '@rollup/rollup-linux-arm-gnueabihf@4.32.0':
+    resolution: {integrity: sha512-3pA7xecItbgOs1A5H58dDvOUEboG5UfpTq3WzAdF54acBbUM+olDJAPkgj1GRJ4ZqE12DZ9/hNS2QZk166v92A==}
     cpu: [arm]
     os: [linux]
 
-  '@rollup/rollup-linux-arm-musleabihf@4.29.1':
-    resolution: {integrity: sha512-RiWpGgbayf7LUcuSNIbahr0ys2YnEERD4gYdISA06wa0i8RALrnzflh9Wxii7zQJEB2/Eh74dX4y/sHKLWp5uQ==}
+  '@rollup/rollup-linux-arm-musleabihf@4.32.0':
+    resolution: {integrity: sha512-Y7XUZEVISGyge51QbYyYAEHwpGgmRrAxQXO3siyYo2kmaj72USSG8LtlQQgAtlGfxYiOwu+2BdbPjzEpcOpRmQ==}
     cpu: [arm]
     os: [linux]
 
-  '@rollup/rollup-linux-arm64-gnu@4.29.1':
-    resolution: {integrity: sha512-Z80O+taYxTQITWMjm/YqNoe9d10OX6kDh8X5/rFCMuPqsKsSyDilvfg+vd3iXIqtfmp+cnfL1UrYirkaF8SBZA==}
+  '@rollup/rollup-linux-arm64-gnu@4.32.0':
+    resolution: {integrity: sha512-r7/OTF5MqeBrZo5omPXcTnjvv1GsrdH8a8RerARvDFiDwFpDVDnJyByYM/nX+mvks8XXsgPUxkwe/ltaX2VH7w==}
     cpu: [arm64]
     os: [linux]
 
-  '@rollup/rollup-linux-arm64-musl@4.29.1':
-    resolution: {integrity: sha512-fOHRtF9gahwJk3QVp01a/GqS4hBEZCV1oKglVVq13kcK3NeVlS4BwIFzOHDbmKzt3i0OuHG4zfRP0YoG5OF/rA==}
+  '@rollup/rollup-linux-arm64-musl@4.32.0':
+    resolution: {integrity: sha512-HJbifC9vex9NqnlodV2BHVFNuzKL5OnsV2dvTw6e1dpZKkNjPG6WUq+nhEYV6Hv2Bv++BXkwcyoGlXnPrjAKXw==}
     cpu: [arm64]
     os: [linux]
 
-  '@rollup/rollup-linux-loongarch64-gnu@4.29.1':
-    resolution: {integrity: sha512-5a7q3tnlbcg0OodyxcAdrrCxFi0DgXJSoOuidFUzHZ2GixZXQs6Tc3CHmlvqKAmOs5eRde+JJxeIf9DonkmYkw==}
+  '@rollup/rollup-linux-loongarch64-gnu@4.32.0':
+    resolution: {integrity: sha512-VAEzZTD63YglFlWwRj3taofmkV1V3xhebDXffon7msNz4b14xKsz7utO6F8F4cqt8K/ktTl9rm88yryvDpsfOw==}
     cpu: [loong64]
     os: [linux]
 
-  '@rollup/rollup-linux-powerpc64le-gnu@4.29.1':
-    resolution: {integrity: sha512-9b4Mg5Yfz6mRnlSPIdROcfw1BU22FQxmfjlp/CShWwO3LilKQuMISMTtAu/bxmmrE6A902W2cZJuzx8+gJ8e9w==}
+  '@rollup/rollup-linux-powerpc64le-gnu@4.32.0':
+    resolution: {integrity: sha512-Sts5DST1jXAc9YH/iik1C9QRsLcCoOScf3dfbY5i4kH9RJpKxiTBXqm7qU5O6zTXBTEZry69bGszr3SMgYmMcQ==}
     cpu: [ppc64]
     os: [linux]
 
-  '@rollup/rollup-linux-riscv64-gnu@4.29.1':
-    resolution: {integrity: sha512-G5pn0NChlbRM8OJWpJFMX4/i8OEU538uiSv0P6roZcbpe/WfhEO+AT8SHVKfp8qhDQzaz7Q+1/ixMy7hBRidnQ==}
+  '@rollup/rollup-linux-riscv64-gnu@4.32.0':
+    resolution: {integrity: sha512-qhlXeV9AqxIyY9/R1h1hBD6eMvQCO34ZmdYvry/K+/MBs6d1nRFLm6BOiITLVI+nFAAB9kUB6sdJRKyVHXnqZw==}
     cpu: [riscv64]
     os: [linux]
 
-  '@rollup/rollup-linux-s390x-gnu@4.29.1':
-    resolution: {integrity: sha512-WM9lIkNdkhVwiArmLxFXpWndFGuOka4oJOZh8EP3Vb8q5lzdSCBuhjavJsw68Q9AKDGeOOIHYzYm4ZFvmWez5g==}
+  '@rollup/rollup-linux-s390x-gnu@4.32.0':
+    resolution: {integrity: sha512-8ZGN7ExnV0qjXa155Rsfi6H8M4iBBwNLBM9lcVS+4NcSzOFaNqmt7djlox8pN1lWrRPMRRQ8NeDlozIGx3Omsw==}
     cpu: [s390x]
     os: [linux]
 
-  '@rollup/rollup-linux-x64-gnu@4.29.1':
-    resolution: {integrity: sha512-87xYCwb0cPGZFoGiErT1eDcssByaLX4fc0z2nRM6eMtV9njAfEE6OW3UniAoDhX4Iq5xQVpE6qO9aJbCFumKYQ==}
+  '@rollup/rollup-linux-x64-gnu@4.32.0':
+    resolution: {integrity: sha512-VDzNHtLLI5s7xd/VubyS10mq6TxvZBp+4NRWoW+Hi3tgV05RtVm4qK99+dClwTN1McA6PHwob6DEJ6PlXbY83A==}
     cpu: [x64]
     os: [linux]
 
-  '@rollup/rollup-linux-x64-musl@4.29.1':
-    resolution: {integrity: sha512-xufkSNppNOdVRCEC4WKvlR1FBDyqCSCpQeMMgv9ZyXqqtKBfkw1yfGMTUTs9Qsl6WQbJnsGboWCp7pJGkeMhKA==}
+  '@rollup/rollup-linux-x64-musl@4.32.0':
+    resolution: {integrity: sha512-qcb9qYDlkxz9DxJo7SDhWxTWV1gFuwznjbTiov289pASxlfGbaOD54mgbs9+z94VwrXtKTu+2RqwlSTbiOqxGg==}
     cpu: [x64]
     os: [linux]
 
-  '@rollup/rollup-win32-arm64-msvc@4.29.1':
-    resolution: {integrity: sha512-F2OiJ42m77lSkizZQLuC+jiZ2cgueWQL5YC9tjo3AgaEw+KJmVxHGSyQfDUoYR9cci0lAywv2Clmckzulcq6ig==}
+  '@rollup/rollup-win32-arm64-msvc@4.32.0':
+    resolution: {integrity: sha512-pFDdotFDMXW2AXVbfdUEfidPAk/OtwE/Hd4eYMTNVVaCQ6Yl8et0meDaKNL63L44Haxv4UExpv9ydSf3aSayDg==}
     cpu: [arm64]
     os: [win32]
 
-  '@rollup/rollup-win32-ia32-msvc@4.29.1':
-    resolution: {integrity: sha512-rYRe5S0FcjlOBZQHgbTKNrqxCBUmgDJem/VQTCcTnA2KCabYSWQDrytOzX7avb79cAAweNmMUb/Zw18RNd4mng==}
+  '@rollup/rollup-win32-ia32-msvc@4.32.0':
+    resolution: {integrity: sha512-/TG7WfrCAjeRNDvI4+0AAMoHxea/USWhAzf9PVDFHbcqrQ7hMMKp4jZIy4VEjk72AAfN5k4TiSMRXRKf/0akSw==}
     cpu: [ia32]
     os: [win32]
 
-  '@rollup/rollup-win32-x64-msvc@4.29.1':
-    resolution: {integrity: sha512-+10CMg9vt1MoHj6x1pxyjPSMjHTIlqs8/tBztXvPAx24SKs9jwVnKqHJumlH/IzhaPUaj3T6T6wfZr8okdXaIg==}
+  '@rollup/rollup-win32-x64-msvc@4.32.0':
+    resolution: {integrity: sha512-5hqO5S3PTEO2E5VjCePxv40gIgyS2KvO7E7/vvC/NbIW4SIRamkMr1hqj+5Y67fbBWv/bQLB6KelBQmXlyCjWA==}
     cpu: [x64]
     os: [win32]
 
@@ -2725,6 +2697,10 @@ packages:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.5.1:
+    resolution: {integrity: sha512-6oz2beyjc5VMn/KV1pPw8fliQkhBXrVn1Z3TVyqZxU8kZpzEKhBdmCFqI6ZbmGtamQvQGuU1sgPTk8ZrXDD7jQ==}
+    engines: {node: ^10 || ^12 || >=14}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -2836,8 +2812,8 @@ packages:
     deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
-  rollup@4.29.1:
-    resolution: {integrity: sha512-RaJ45M/kmJUzSWDs1Nnd5DdV4eerC98idtUOVr6FfKcgxqvjwHmxc5upLF9qZU9EpsVzzhleFahrT3shLuJzIw==}
+  rollup@4.32.0:
+    resolution: {integrity: sha512-JmrhfQR31Q4AuNBjjAX4s+a/Pu/Q8Q9iwjWBsjRH1q52SPFE2NqRMK6fUZKKnvKO6id+h7JIRf0oYsph53eATg==}
     engines: {node: '>=18.0.0', npm: '>=8.0.0'}
     hasBin: true
 
@@ -3114,8 +3090,8 @@ packages:
       vite:
         optional: true
 
-  vite@5.4.11:
-    resolution: {integrity: sha512-c7jFQRklXua0mTzneGW9QVyxFjUgwcihC4bXEtujIo2ouWCe1Ajt/amn2PCxYnhYfd5k09JX3SB7OYWFKYqj8Q==}
+  vite@5.4.12:
+    resolution: {integrity: sha512-KwUaKB27TvWwDJr1GjjWthLMATbGEbeWYZIbGZ5qFIsgPP3vWzLu4cVooqhm5/Z2SPDUMjyPVjTztm5tYKwQxA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -4056,23 +4032,6 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@nextui-org/card@2.2.9(@nextui-org/system@2.4.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@nextui-org/react-utils': 2.1.3(react@18.3.1)
-      '@nextui-org/ripple': 2.2.7(@nextui-org/system@2.4.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@nextui-org/shared-utils': 2.1.2
-      '@nextui-org/system': 2.4.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@nextui-org/theme': 2.4.1(tailwindcss@3.4.16)
-      '@nextui-org/use-aria-button': 2.2.4(react@18.3.1)
-      '@react-aria/button': 3.11.0(react@18.3.1)
-      '@react-aria/focus': 3.19.0(react@18.3.1)
-      '@react-aria/interactions': 3.22.5(react@18.3.1)
-      '@react-aria/utils': 3.26.0(react@18.3.1)
-      '@react-types/shared': 3.26.0(react@18.3.1)
-      framer-motion: 11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
   '@nextui-org/code@2.2.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@nextui-org/react-utils': 2.1.1(react@18.3.1)
@@ -4262,12 +4221,6 @@ snapshots:
       '@nextui-org/shared-utils': 2.1.1
       react: 18.3.1
 
-  '@nextui-org/react-utils@2.1.3(react@18.3.1)':
-    dependencies:
-      '@nextui-org/react-rsc-utils': 2.1.1(react@18.3.1)
-      '@nextui-org/shared-utils': 2.1.2
-      react: 18.3.1
-
   '@nextui-org/ripple@2.2.3(@nextui-org/system@2.4.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       '@nextui-org/dom-animation': 2.1.1(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
@@ -4279,24 +4232,11 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
-  '@nextui-org/ripple@2.2.7(@nextui-org/system@2.4.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@nextui-org/dom-animation': 2.1.1(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))
-      '@nextui-org/react-utils': 2.1.3(react@18.3.1)
-      '@nextui-org/shared-utils': 2.1.2
-      '@nextui-org/system': 2.4.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@nextui-org/theme': 2.4.1(tailwindcss@3.4.16)
-      framer-motion: 11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
   '@nextui-org/shared-icons@2.1.1(react@18.3.1)':
     dependencies:
       react: 18.3.1
 
   '@nextui-org/shared-utils@2.1.1': {}
-
-  '@nextui-org/shared-utils@2.1.2': {}
 
   '@nextui-org/snippet@2.2.4(@nextui-org/system@2.4.3(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(@nextui-org/theme@2.4.1(tailwindcss@3.4.16))(framer-motion@11.5.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
@@ -4405,16 +4345,6 @@ snapshots:
       '@react-types/shared': 3.25.0(react@18.3.1)
       react: 18.3.1
 
-  '@nextui-org/use-aria-button@2.2.4(react@18.3.1)':
-    dependencies:
-      '@nextui-org/shared-utils': 2.1.2
-      '@react-aria/focus': 3.19.0(react@18.3.1)
-      '@react-aria/interactions': 3.22.5(react@18.3.1)
-      '@react-aria/utils': 3.26.0(react@18.3.1)
-      '@react-types/button': 3.10.1(react@18.3.1)
-      '@react-types/shared': 3.26.0(react@18.3.1)
-      react: 18.3.1
-
   '@nextui-org/use-aria-link@2.2.1(react@18.3.1)':
     dependencies:
       '@react-aria/focus': 3.18.4(react@18.3.1)
@@ -4492,18 +4422,6 @@ snapshots:
       '@react-aria/utils': 3.26.0(react@18.3.1)
       '@react-stately/toggle': 3.8.0(react@18.3.1)
       '@react-types/button': 3.10.0(react@18.3.1)
-      '@react-types/shared': 3.26.0(react@18.3.1)
-      '@swc/helpers': 0.5.15
-      react: 18.3.1
-
-  '@react-aria/button@3.11.0(react@18.3.1)':
-    dependencies:
-      '@react-aria/focus': 3.19.0(react@18.3.1)
-      '@react-aria/interactions': 3.22.5(react@18.3.1)
-      '@react-aria/toolbar': 3.0.0-beta.11(react@18.3.1)
-      '@react-aria/utils': 3.26.0(react@18.3.1)
-      '@react-stately/toggle': 3.8.0(react@18.3.1)
-      '@react-types/button': 3.10.1(react@18.3.1)
       '@react-types/shared': 3.26.0(react@18.3.1)
       '@swc/helpers': 0.5.15
       react: 18.3.1
@@ -4716,15 +4634,6 @@ snapshots:
       '@react-aria/utils': 3.26.0(react@18.3.1)
       '@react-stately/toggle': 3.8.0(react@18.3.1)
       '@react-types/checkbox': 3.9.0(react@18.3.1)
-      '@react-types/shared': 3.26.0(react@18.3.1)
-      '@swc/helpers': 0.5.15
-      react: 18.3.1
-
-  '@react-aria/toolbar@3.0.0-beta.11(react@18.3.1)':
-    dependencies:
-      '@react-aria/focus': 3.19.0(react@18.3.1)
-      '@react-aria/i18n': 3.12.4(react@18.3.1)
-      '@react-aria/utils': 3.26.0(react@18.3.1)
       '@react-types/shared': 3.26.0(react@18.3.1)
       '@swc/helpers': 0.5.15
       react: 18.3.1
@@ -4964,61 +4873,61 @@ snapshots:
 
   '@remix-run/router@1.16.0': {}
 
-  '@rollup/rollup-android-arm-eabi@4.29.1':
+  '@rollup/rollup-android-arm-eabi@4.32.0':
     optional: true
 
-  '@rollup/rollup-android-arm64@4.29.1':
+  '@rollup/rollup-android-arm64@4.32.0':
     optional: true
 
-  '@rollup/rollup-darwin-arm64@4.29.1':
+  '@rollup/rollup-darwin-arm64@4.32.0':
     optional: true
 
-  '@rollup/rollup-darwin-x64@4.29.1':
+  '@rollup/rollup-darwin-x64@4.32.0':
     optional: true
 
-  '@rollup/rollup-freebsd-arm64@4.29.1':
+  '@rollup/rollup-freebsd-arm64@4.32.0':
     optional: true
 
-  '@rollup/rollup-freebsd-x64@4.29.1':
+  '@rollup/rollup-freebsd-x64@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-arm-gnueabihf@4.29.1':
+  '@rollup/rollup-linux-arm-gnueabihf@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-arm-musleabihf@4.29.1':
+  '@rollup/rollup-linux-arm-musleabihf@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-arm64-gnu@4.29.1':
+  '@rollup/rollup-linux-arm64-gnu@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-arm64-musl@4.29.1':
+  '@rollup/rollup-linux-arm64-musl@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-loongarch64-gnu@4.29.1':
+  '@rollup/rollup-linux-loongarch64-gnu@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-powerpc64le-gnu@4.29.1':
+  '@rollup/rollup-linux-powerpc64le-gnu@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-riscv64-gnu@4.29.1':
+  '@rollup/rollup-linux-riscv64-gnu@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-s390x-gnu@4.29.1':
+  '@rollup/rollup-linux-s390x-gnu@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-x64-gnu@4.29.1':
+  '@rollup/rollup-linux-x64-gnu@4.32.0':
     optional: true
 
-  '@rollup/rollup-linux-x64-musl@4.29.1':
+  '@rollup/rollup-linux-x64-musl@4.32.0':
     optional: true
 
-  '@rollup/rollup-win32-arm64-msvc@4.29.1':
+  '@rollup/rollup-win32-arm64-msvc@4.32.0':
     optional: true
 
-  '@rollup/rollup-win32-ia32-msvc@4.29.1':
+  '@rollup/rollup-win32-ia32-msvc@4.32.0':
     optional: true
 
-  '@rollup/rollup-win32-x64-msvc@4.29.1':
+  '@rollup/rollup-win32-x64-msvc@4.32.0':
     optional: true
 
   '@rtsao/scc@1.1.0': {}
@@ -5485,14 +5394,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.1': {}
 
-  '@vitejs/plugin-react@4.3.4(vite@5.4.11(@types/node@20.5.7))':
+  '@vitejs/plugin-react@4.3.4(vite@5.4.12(@types/node@20.5.7))':
     dependencies:
       '@babel/core': 7.26.0
       '@babel/plugin-transform-react-jsx-self': 7.25.9(@babel/core@7.26.0)
       '@babel/plugin-transform-react-jsx-source': 7.25.9(@babel/core@7.26.0)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.4.11(@types/node@20.5.7)
+      vite: 5.4.12(@types/node@20.5.7)
     transitivePeerDependencies:
       - supports-color
 
@@ -6720,6 +6629,12 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
+  postcss@8.5.1:
+    dependencies:
+      nanoid: 3.3.8
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
   prelude-ls@1.2.1: {}
 
   prettier-linter-helpers@1.0.0:
@@ -6832,29 +6747,29 @@ snapshots:
     dependencies:
       glob: 7.2.3
 
-  rollup@4.29.1:
+  rollup@4.32.0:
     dependencies:
       '@types/estree': 1.0.6
     optionalDependencies:
-      '@rollup/rollup-android-arm-eabi': 4.29.1
-      '@rollup/rollup-android-arm64': 4.29.1
-      '@rollup/rollup-darwin-arm64': 4.29.1
-      '@rollup/rollup-darwin-x64': 4.29.1
-      '@rollup/rollup-freebsd-arm64': 4.29.1
-      '@rollup/rollup-freebsd-x64': 4.29.1
-      '@rollup/rollup-linux-arm-gnueabihf': 4.29.1
-      '@rollup/rollup-linux-arm-musleabihf': 4.29.1
-      '@rollup/rollup-linux-arm64-gnu': 4.29.1
-      '@rollup/rollup-linux-arm64-musl': 4.29.1
-      '@rollup/rollup-linux-loongarch64-gnu': 4.29.1
-      '@rollup/rollup-linux-powerpc64le-gnu': 4.29.1
-      '@rollup/rollup-linux-riscv64-gnu': 4.29.1
-      '@rollup/rollup-linux-s390x-gnu': 4.29.1
-      '@rollup/rollup-linux-x64-gnu': 4.29.1
-      '@rollup/rollup-linux-x64-musl': 4.29.1
-      '@rollup/rollup-win32-arm64-msvc': 4.29.1
-      '@rollup/rollup-win32-ia32-msvc': 4.29.1
-      '@rollup/rollup-win32-x64-msvc': 4.29.1
+      '@rollup/rollup-android-arm-eabi': 4.32.0
+      '@rollup/rollup-android-arm64': 4.32.0
+      '@rollup/rollup-darwin-arm64': 4.32.0
+      '@rollup/rollup-darwin-x64': 4.32.0
+      '@rollup/rollup-freebsd-arm64': 4.32.0
+      '@rollup/rollup-freebsd-x64': 4.32.0
+      '@rollup/rollup-linux-arm-gnueabihf': 4.32.0
+      '@rollup/rollup-linux-arm-musleabihf': 4.32.0
+      '@rollup/rollup-linux-arm64-gnu': 4.32.0
+      '@rollup/rollup-linux-arm64-musl': 4.32.0
+      '@rollup/rollup-linux-loongarch64-gnu': 4.32.0
+      '@rollup/rollup-linux-powerpc64le-gnu': 4.32.0
+      '@rollup/rollup-linux-riscv64-gnu': 4.32.0
+      '@rollup/rollup-linux-s390x-gnu': 4.32.0
+      '@rollup/rollup-linux-x64-gnu': 4.32.0
+      '@rollup/rollup-linux-x64-musl': 4.32.0
+      '@rollup/rollup-win32-arm64-msvc': 4.32.0
+      '@rollup/rollup-win32-ia32-msvc': 4.32.0
+      '@rollup/rollup-win32-x64-msvc': 4.32.0
       fsevents: 2.3.3
 
   run-parallel@1.2.0:
@@ -7188,22 +7103,22 @@ snapshots:
 
   uuid@9.0.1: {}
 
-  vite-tsconfig-paths@4.3.2(typescript@5.6.3)(vite@5.4.11(@types/node@20.5.7)):
+  vite-tsconfig-paths@4.3.2(typescript@5.6.3)(vite@5.4.12(@types/node@20.5.7)):
     dependencies:
       debug: 4.4.0
       globrex: 0.1.2
       tsconfck: 3.1.4(typescript@5.6.3)
     optionalDependencies:
-      vite: 5.4.11(@types/node@20.5.7)
+      vite: 5.4.12(@types/node@20.5.7)
     transitivePeerDependencies:
       - supports-color
       - typescript
 
-  vite@5.4.11(@types/node@20.5.7):
+  vite@5.4.12(@types/node@20.5.7):
     dependencies:
       esbuild: 0.21.5
-      postcss: 8.4.49
-      rollup: 4.29.1
+      postcss: 8.5.1
+      rollup: 4.32.0
     optionalDependencies:
       '@types/node': 20.5.7
       fsevents: 2.3.3
