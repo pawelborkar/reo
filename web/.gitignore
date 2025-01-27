@@ -1,12 +1,11 @@
-
 node_modules
 
 .env
 .env.local
 .env.production
 
-.vite
+.vite/
 .vscode
 
 dist/
-
+!vite-env.d.ts 
