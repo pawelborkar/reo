@@ -8,4 +8,7 @@ export default defineConfig({
   server: {
     port: 5050,
   },
+  build: {
+    outDir: "dist",
+  },
 });
