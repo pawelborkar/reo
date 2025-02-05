@@ -14,7 +14,6 @@
     "dev": "ts-node app.ts --watch",
     "build": "rm -rf dist && tsc",
     "clean": "rm -rf dist",
-    "build:prod": "npm run clean && tsc",
     "watch": "tsc -w",
     "lint": "eslint .",
     "format": "prettier --write ."
